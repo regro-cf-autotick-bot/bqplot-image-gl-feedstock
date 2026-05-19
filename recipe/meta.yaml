@@ -1,5 +1,5 @@
 {% set name = "bqplot-image-gl" %}
-{% set version = "1.9.2" %}
+{% set version = "1.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7ed4b00bc0d5f1fe9b28be7831a13429e7735a6fee84a537f3fc91e85299f999
+  sha256: 2f76f7bf84ac427285427f0ffce4e3db4f1fcace69103e36d1832ecd884b90c5
 
 build:
   noarch: python
