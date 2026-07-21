@@ -26,6 +26,11 @@ requirements:
     - ipywidgets >=7.0.0
     - bqplot >=0.12,<0.14
     - pillow
+  run_constrained:
+    # bqplot-gl is required when running with bqplot >=0.13 (upstream
+    # "bqplot13" extra); conda cannot express that conditionally, so
+    # only constrain the version if it is installed.
+    - bqplot-gl >=0.1.1
 
 test:
   imports:
